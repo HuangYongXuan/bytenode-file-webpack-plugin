@@ -5,6 +5,7 @@ export interface Option {
     electron?: boolean;
     createLoader?: boolean;
     loaderFilename?: string;
+    callback?: Function
 }
 
 export default class ByteNodeFileWebpackPlugin {
