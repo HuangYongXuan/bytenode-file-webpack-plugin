@@ -19,13 +19,15 @@ ByteNodeFileWebpackPlugin.prototype.apply = function (compiler) {
 	let self = this;
 	compiler.plugin('done', function () {
 		self.options.forEach(option => {
-			fs.readFile(option.filename, 'utf8', function (err, data) {
-				bytenode.compileFile(option);
-				if (option.callback) {
-					data = option.callback(data);
-				}
-				fs.writeFileSync(option.filename, data);
-			});
+			setTimeout(() => {
+				fs.readFile(option.filename, 'utf8', function (err, data) {
+					bytenode.compileFile(option);
+					if (option.callback) {
+						data = option.callback(data);
+					}
+					fs.writeFileSync(option.filename, data);
+				});
+			}, 1000);
 		});
 	});
 
