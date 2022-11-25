@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/HuangYongXuan/bytenode-file-webpack-plugin/compare/v1.0.2...v2.0.0) (2022-11-25)
+
+
+### Features
+
+* 更新为最新的webpack ([755888e](https://github.com/HuangYongXuan/bytenode-file-webpack-plugin/commit/755888e3ee132002f27674b6aab232e37c75a066))
+
 ### [1.0.2](https://github.com/HuangYongXuan/bytenode-file-webpack-plugin/compare/v1.0.1...v1.0.2) (2022-07-27)
 
 ### 1.0.1 (2022-07-27)
